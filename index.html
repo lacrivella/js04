@@ -104,9 +104,11 @@
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
     const transportation = data.reduce(function(obj, item) {
-      console.log(item);
+      obj[item]++;
       return obj;
-    }, {});
+    }, {
+      walk: 0
+    });
 
   </script>
 </body>
